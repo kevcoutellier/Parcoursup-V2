@@ -1,14 +1,658 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <script src="https://api.tempolabs.ai/proxy-asset?url=https://storage.googleapis.com/tempo-public-assets/error-handling.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charte Graphique Interactive - Parcoursup 2.0</title>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.9.3/dist/fonts/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo-container">
+        <svg class="logo-marianne" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0H32V32H0V0Z" fill="#000091"/>
+          <path d="M9.73 10.86C11.19 10.86 12.37 12.05 12.37 13.5C12.37 14.96 11.19 16.14 9.73 16.14C8.27 16.14 7.09 14.96 7.09 13.5C7.09 12.05 8.27 10.86 9.73 10.86Z" fill="#FFFFFF"/>
+          <path d="M22.27 10.86C23.73 10.86 24.91 12.05 24.91 13.5C24.91 14.96 23.73 16.14 22.27 16.14C20.81 16.14 19.63 14.96 19.63 13.5C19.63 12.05 20.81 10.86 22.27 10.86Z" fill="#FFFFFF"/>
+          <path d="M16 7.96C17.46 7.96 18.64 9.14 18.64 10.59C18.64 12.05 17.46 13.23 16 13.23C14.54 13.23 13.36 12.05 13.36 10.59C13.36 9.14 14.54 7.96 16 7.96Z" fill="#FFFFFF"/>
+          <path d="M16 18.77C17.46 18.77 18.64 19.95 18.64 21.41C18.64 22.86 17.46 24.05 16 24.05C14.54 24.05 13.36 22.86 13.36 21.41C13.36 19.95 14.54 18.77 16 18.77Z" fill="#FFFFFF"/>
+        </svg>
+        <div>
+          <div class="logo-text">Parcoursup</div>
+          <div class="logo-version">2.0</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <h1>Charte Graphique Interactive - Parcoursup 2.0</h1>
+    <p>Cette charte graphique contient les éléments visuels et les composants utilisés dans Parcoursup 2.0, respectant le Système de Design de l'État français (DSFR).</p>
+    
+    <div class="tab-container">
+      <div class="tabs">
+        <div class="tab active" data-tab="couleurs">Couleurs</div>
+        <div class="tab" data-tab="typographie">Typographie</div>
+        <div class="tab" data-tab="composants">Composants</div>
+        <div class="tab" data-tab="espacements">Espacements</div>
+        <div class="tab" data-tab="illustrations">Illustrations</div>
+      </div>
+      
+      <!-- Onglet Couleurs -->
+      <div class="tab-content active" id="couleurs">
+        <div class="section">
+          <h2>Couleurs primaires</h2>
+          <p>Les couleurs principales de Parcoursup 2.0 sont basées sur le Système de Design de l'État français (DSFR).</p>
+          <div class="palette">
+            <div class="color-sample" onclick="copyToClipboard('#000091', this)">
+              <div class="color-box" style="background: var(--fr-blue);"></div>
+              <div class="color-label">Bleu France<br>#000091</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#e1000f', this)">
+              <div class="color-box" style="background: var(--fr-red);"></div>
+              <div class="color-label">Rouge Marianne<br>#e1000f</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#ffffff', this)">
+              <div class="color-box" style="background: white; border: 1px solid #e5e5e5"></div>
+              <div class="color-label">Blanc<br>#FFFFFF</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#161616', this)">
+              <div class="color-box" style="background: #161616;"></div>
+              <div class="color-label">Noir<br>#161616</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section">
+          <h2>Couleurs sémantiques</h2>
+          <p>Couleurs utilisées pour communiquer des informations spécifiques.</p>
+          <div class="palette">
+            <div class="color-sample" onclick="copyToClipboard('#0063cb', this)">
+              <div class="color-box" style="background: var(--fr-info);"></div>
+              <div class="color-label">Info<br>#0063cb</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#18753c', this)">
+              <div class="color-box" style="background: var(--fr-success);"></div>
+              <div class="color-label">Succès<br>#18753c</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#b34000', this)">
+              <div class="color-box" style="background: var(--fr-warning);"></div>
+              <div class="color-label">Alerte<br>#b34000</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#ce0500', this)">
+              <div class="color-box" style="background: var(--fr-error);"></div>
+              <div class="color-label">Erreur<br>#ce0500</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section">
+          <h2>Nuances de gris</h2>
+          <p>Palette de gris utilisée pour la hiérarchie visuelle et les éléments d'interface.</p>
+          <div class="palette">
+            <div class="color-sample" onclick="copyToClipboard('#161616', this)">
+              <div class="color-box" style="background: var(--fr-grey-1000);"></div>
+              <div class="color-label">Gris 1000<br>#161616</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#2a2a2a', this)">
+              <div class="color-box" style="background: var(--fr-grey-900);"></div>
+              <div class="color-label">Gris 900<br>#2a2a2a</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#666666', this)">
+              <div class="color-box" style="background: var(--fr-grey-600);"></div>
+              <div class="color-label">Gris 600<br>#666666</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#929292', this)">
+              <div class="color-box" style="background: var(--fr-grey-400);"></div>
+              <div class="color-label">Gris 400<br>#929292</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#d8d8d8', this)">
+              <div class="color-box" style="background: var(--fr-grey-200);"></div>
+              <div class="color-label">Gris 200<br>#d8d8d8</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#f6f6f6', this)">
+              <div class="color-box" style="background: var(--fr-grey-50);"></div>
+              <div class="color-label">Gris 50<br>#f6f6f6</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section">
+          <h2>Variantes et états</h2>
+          <p>Variations des couleurs primaires pour différents états des éléments d'interface.</p>
+          <div class="palette">
+            <div class="color-sample" onclick="copyToClipboard('#1212ff', this)">
+              <div class="color-box" style="background: var(--fr-blue-hover);"></div>
+              <div class="color-label">Bleu Hover<br>#1212ff</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#2323ff', this)">
+              <div class="color-box" style="background: var(--fr-blue-active);"></div>
+              <div class="color-label">Bleu Active<br>#2323ff</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#e3e3fd', this)">
+              <div class="color-box" style="background: var(--fr-blue-light);"></div>
+              <div class="color-label">Bleu Clair<br>#e3e3fd</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#ff2a2a', this)">
+              <div class="color-box" style="background: var(--fr-red-hover);"></div>
+              <div class="color-label">Rouge Hover<br>#ff2a2a</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#ff5555', this)">
+              <div class="color-box" style="background: var(--fr-red-active);"></div>
+              <div class="color-label">Rouge Active<br>#ff5555</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+            <div class="color-sample" onclick="copyToClipboard('#ffe9e9', this)">
+              <div class="color-box" style="background: var(--fr-red-light);"></div>
+              <div class="color-label">Rouge Clair<br>#ffe9e9</div>
+              <span class="tooltip-text">Copié !</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Onglet Typographie -->
+      <div class="tab-content" id="typographie">
+        <div class="section">
+          <h2>Police principale</h2>
+          <p>La police Marianne est la police officielle du Système de Design de l'État français (DSFR).</p>
+          
+          <div class="font-sample" style="font-family: 'Marianne', Arial, sans-serif;">
+            <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">Marianne Bold</div>
+            <div>ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+            <div>abcdefghijklmnopqrstuvwxyz</div>
+            <div>0123456789</div>
+          </div>
+          
+          <div class="font-sample" style="font-family: 'Marianne', Arial, sans-serif;">
+            <div style="font-size: 2rem; font-weight: 400; margin-bottom: 0.5rem;">Marianne Regular</div>
+            <div>ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+            <div>abcdefghijklmnopqrstuvwxyz</div>
+            <div>0123456789</div>
+          </div>
+          
+          <div class="font-sample" style="font-family: 'Marianne', Arial, sans-serif;">
+            <div style="font-size: 2rem; font-weight: 300; margin-bottom: 0.5rem;">Marianne Light</div>
+            <div>ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+            <div>abcdefghijklmnopqrstuvwxyz</div>
+            <div>0123456789</div>
+          </div>
+        </div>
+        
+        <div class="section">
+          <h2>Police secondaire</h2>
+          <p>La police Spectral est utilisée pour les éléments secondaires et contenus spécifiques.</p>
+          
+          <div class="font-sample serif">
+            <div style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">Spectral ExtraBold</div>
+            <div>ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+            <div>abcdefghijklmnopqrstuvwxyz</div>
+            <div>0123456789</div>
+          </div>
+          
+          <div class="font-sample serif">
+            <div style="font-size: 2rem; font-weight: 600; margin-bottom: 0.5rem;">Spectral SemiBold</div>
+            <div>ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+            <div>abcdefghijklmnopqrstuvwxyz</div>
+            <div>0123456789</div>
+          </div>
+          
+          <div class="font-sample serif">
+            <div style="font-size: 2rem; font-weight: 400; margin-bottom: 0.5rem;">Spectral Regular</div>
+            <div>ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+            <div>abcdefghijklmnopqrstuvwxyz</div>
+            <div>0123456789</div>
+          </div>
+        </div>
+        
+        <div class="section">
+          <h2>Hiérarchie typographique</h2>
+          
+          <div class="font-sample">
+            <h1 style="margin-top: 0;">Titre de niveau 1</h1>
+            <p>Utilisé pour les titres principaux de pages. Police Marianne Bold, 2.5rem (40px).</p>
+          </div>
+          
+          <div class="font-sample">
+            <h2 style="margin-top: 0;">Titre de niveau 2</h2>
+            <p>Utilisé pour les sections principales. Police Marianne Bold, 1.75rem (28px).</p>
+          </div>
+          
+          <div class="font-sample">
+            <h3 style="margin-top: 0;">Titre de niveau 3</h3>
+            <p>Utilisé pour les sous-sections. Police Marianne SemiBold, 1.25rem (20px).</p>
+          </div>
+          
+          <div class="font-sample">
+            <h4 style="margin-top: 0;">Titre de niveau 4</h4>
+            <p>Utilisé pour les groupes d'éléments. Police Marianne SemiBold, 1.125rem (18px).</p>
+          </div>
+          
+          <div class="font-sample">
+            <p style="font-size: 1rem; margin: 0;">Texte courant</p>
+            <p>Utilisé pour le contenu principal. Police Marianne Regular, 1rem (16px).</p>
+          </div>
+          
+          <div class="font-sample">
+            <p style="font-size: 0.875rem; margin: 0;">Texte secondaire</p>
+            <p>Utilisé pour les informations complémentaires. Police Marianne Regular, 0.875rem (14px).</p>
+          </div>
+          
+          <div class="font-sample">
+            <p style="font-size: 0.75rem; margin: 0;">Texte tertiaire</p>
+            <p>Utilisé pour les notes, légendes et informations annexes. Police Marianne Regular, 0.75rem (12px).</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Onglet Composants -->
+      <div class="tab-content" id="composants">
+        <div class="section">
+          <h2>Boutons</h2>
+          <p>Les boutons permettent aux utilisateurs d'effectuer des actions et de faire des choix d'un simple clic.</p>
+          
+          <h3>Styles de boutons</h3>
+          <div class="component-preview">
+            <button class="btn btn-primary">Bouton primaire</button>
+            <button class="btn btn-secondary">Bouton secondaire</button>
+            <button class="btn btn-destructive">Bouton destructif</button>
+            <button class="btn btn-outline">Bouton contour</button>
+          </div>
+          
+          <h3>Tailles de boutons</h3>
+          <div class="component-preview">
+            <button class="btn btn-primary btn-sm">Petit</button>
+            <button class="btn btn-primary">Moyen (par défaut)</button>
+            <button class="btn btn-primary btn-lg">Grand</button>
+          </div>
+          
+          <div class="component-code">
+            &lt;button class="btn btn-primary"&gt;Bouton primaire&lt;/button&gt;<br>
+            &lt;button class="btn btn-secondary"&gt;Bouton secondaire&lt;/button&gt;<br>
+            &lt;button class="btn btn-destructive"&gt;Bouton destructif&lt;/button&gt;<br>
+            &lt;button class="btn btn-outline"&gt;Bouton contour&lt;/button&gt;
+          </div>
+        </div>
+        
+        <div class="section">
+          <h2>Cartes</h2>
+          <p>Les cartes sont des conteneurs pour afficher du contenu et des actions sur un même sujet.</p>
+          
+          <div class="component-preview">
+            <div class="card">
+              <h3 style="margin-top: 0;">Titre de la carte</h3>
+              <p>Contenu de la carte avec des informations pertinentes pour l'utilisateur.</p>
+              <button class="btn btn-primary">Action principale</button>
+            </div>
+          </div>
+          
+          <div class="component-code">
+            &lt;div class="card"&gt;<br>
+            &nbsp;&nbsp;&lt;h3&gt;Titre de la carte&lt;/h3&gt;<br>
+            &nbsp;&nbsp;&lt;p&gt;Contenu de la carte avec des informations pertinentes pour l'utilisateur.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;button class="btn btn-primary"&gt;Action principale&lt;/button&gt;<br>
+            &lt;/div&gt;
+          </div>
+        </div>
+        
+        <div class="section">
+          <h2>Formulaires</h2>
+          <p>Les éléments de formulaire permettent aux utilisateurs de saisir des données.</p>
+          
+          <div class="component-preview">
+            <div class="form-group">
+              <label class="form-label" for="nom">Nom</label>
+              <input class="form-input" type="text" id="nom" placeholder="Entrez votre nom">
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" id="email" placeholder="Entrez votre email">
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="formation">Formation</label>
+              <select class="form-select" id="formation">
+                <option value="">Sélectionnez une formation</option>
+                <option value="licence">Licence</option>
+                <option value="dut">DUT</option>
+                <option value="bts">BTS</option>
+                <option value="cpge">CPGE</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label">Préférences</label>
+              <div class="checkbox">
+                <input type="checkbox" id="pref1">
+                <label for="pref1">Recevoir des notifications</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="pref2">
+                <label for="pref2">Participer aux enquêtes</label>
+              </div>
+            </div>
+            
+            <button class="btn btn-primary">Soumettre</button>
+          </div>
+          
+          <div class="component-code">
+            &lt;div class="form-group"&gt;<br>
+            &nbsp;&nbsp;&lt;label class="form-label" for="nom"&gt;Nom&lt;/label&gt;<br>
+            &nbsp;&nbsp;&lt;input class="form-input" type="text" id="nom" placeholder="Entrez votre nom"&gt;<br>
+            &lt;/div&gt;
+          </div>
+        </div>
+      </div>
+      
+      <!-- Onglet Espacements -->
+      <div class="tab-content" id="espacements">
+        <div class="section">
+          <h2>Système d'espacement</h2>
+          <p>Un système d'espacement cohérent est utilisé dans toute l'interface pour créer une hiérarchie visuelle et améliorer la lisibilité.</p>
+          
+          <h3>Espacements (margins/paddings)</h3>
+          <div class="spacing-sample">
+            <div class="spacing-box" style="width: 0.25rem; height: 0.25rem;">
+              4px<br>(0.25rem)
+            </div>
+            <div class="spacing-box" style="width: 0.5rem; height: 0.5rem;">
+              8px<br>(0.5rem)
+            </div>
+            <div class="spacing-box" style="width: 0.75rem; height: 0.75rem;">
+              12px<br>(0.75rem)
+            </div>
+            <div class="spacing-box" style="width: 1rem; height: 1rem;">
+              16px<br>(1rem)
+            </div>
+            <div class="spacing-box" style="width: 1.5rem; height: 1.5rem;">
+              24px<br>(1.5rem)
+            </div>
+            <div class="spacing-box" style="width: 2rem; height: 2rem;">
+              32px<br>(2rem)
+            </div>
+          </div>
+          
+          <h3>Rayons de bordure</h3>
+          <div class="spacing-sample">
+            <div class="spacing-box" style="border-radius: var(--radius-sm);">
+              4px<br>(radius-sm)
+            </div>
+            <div class="spacing-box" style="border-radius: var(--radius);">
+              8px<br>(radius)
+            </div>
+            <div class="spacing-box" style="border-radius: var(--radius-lg);">
+              12px<br>(radius-lg)
+            </div>
+          </div>
+          
+          <h3>Grille responsive</h3>
+          <p>Le design utilise une grille responsive pour s'adapter à différentes tailles d'écran.</p>
+          <div class="grid">
+            <div style="background: var(--fr-blue-light); padding: 1rem; border-radius: var(--radius);">Colonne 1</div>
+            <div style="background: var(--fr-blue-light); padding: 1rem; border-radius: var(--radius);">Colonne 2</div>
+            <div style="background: var(--fr-blue-light); padding: 1rem; border-radius: var(--radius);">Colonne 3</div>
+            <div style="background: var(--fr-blue-light); padding: 1rem; border-radius: var(--radius);">Colonne 4</div>
+          </div>
+        </div>
+        
+        <div class="section">
+          <h2>Espacement vertical</h2>
+          <p>L'espacement vertical entre les sections crée une hiérarchie claire et améliore la lisibilité.</p>
+          
+          <div style="background: var(--fr-blue-light); padding: 1rem; border-radius: var(--radius); margin-bottom: 0.5rem;">
+            Section avec margin-bottom: 0.5rem (8px)
+          </div>
+          
+          <div style="background: var(--fr-blue-light); padding: 1rem; border-radius: var(--radius); margin-bottom: 1rem;">
+            Section avec margin-bottom: 1rem (16px)
+          </div>
+          
+          <div style="background: var(--fr-blue-light); padding: 1rem; border-radius: var(--radius); margin-bottom: 2rem;">
+            Section avec margin-bottom: 2rem (32px)
+          </div>
+          
+          <div style="background: var(--fr-blue-light); padding: 1rem; border-radius: var(--radius);">
+            Dernière section
+          </div>
+        </div>
+      </div>
+      
+      <!-- Onglet Illustrations -->
+      <div class="tab-content" id="illustrations">
+        <div class="section">
+          <h2>Logo</h2>
+          <p>Le logo de Parcoursup 2.0 combine le symbole de Marianne avec une typographie moderne.</p>
+          
+          <div style="display: flex; gap: 2rem; margin-bottom: 2rem;">
+            <div>
+              <h3>Version par défaut (fond bleu)</h3>
+              <div style="background: var(--fr-blue); padding: 1rem; border-radius: var(--radius); width: fit-content;">
+                <div class="logo-container">
+                  <svg class="logo-marianne" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H32V32H0V0Z" fill="#000091"/>
+                    <path d="M9.73 10.86C11.19 10.86 12.37 12.05 12.37 13.5C12.37 14.96 11.19 16.14 9.73 16.14C8.27 16.14 7.09 14.96 7.09 13.5C7.09 12.05 8.27 10.86 9.73 10.86Z" fill="#FFFFFF"/>
+                    <path d="M22.27 10.86C23.73 10.86 24.91 12.05 24.91 13.5C24.91 14.96 23.73 16.14 22.27 16.14C20.81 16.14 19.63 14.96 19.63 13.5C19.63 12.05 20.81 10.86 22.27 10.86Z" fill="#FFFFFF"/>
+                    <path d="M16 7.96C17.46 7.96 18.64 9.14 18.64 10.59C18.64 12.05 17.46 13.23 16 13.23C14.54 13.23 13.36 12.05 13.36 10.59C13.36 9.14 14.54 7.96 16 7.96Z" fill="#FFFFFF"/>
+                    <path d="M16 18.77C17.46 18.77 18.64 19.95 18.64 21.41C18.64 22.86 17.46 24.05 16 24.05C14.54 24.05 13.36 22.86 13.36 21.41C13.36 19.95 14.54 18.77 16 18.77Z" fill="#FFFFFF"/>
+                  </svg>
+                  <div>
+                    <div class="logo-text">Parcoursup</div>
+                    <div class="logo-version">2.0</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <h3>Version inversée (fond blanc)</h3>
+              <div style="background: white; padding: 1rem; border-radius: var(--radius); width: fit-content; border: 1px solid var(--fr-grey-200);">
+                <div class="logo-container">
+                  <svg class="logo-marianne" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H32V32H0V0Z" fill="#000091"/>
+<path d="M9.73 10.86C11.19 10.86 12.37 12.05 12.37 13.5C12.37 14.96 11.19 16.14 9.73 16.14C8.27 16.14 7.09 14.96 7.09 13.5C7.09 12.05 8.27 10.86 9.73 10.86Z" fill="#FFFFFF"/>
+                    <path d="M22.27 10.86C23.73 10.86 24.91 12.05 24.91 13.5C24.91 14.96 23.73 16.14 22.27 16.14C20.81 16.14 19.63 14.96 19.63 13.5C19.63 12.05 20.81 10.86 22.27 10.86Z" fill="#FFFFFF"/>
+                    <path d="M16 7.96C17.46 7.96 18.64 9.14 18.64 10.59C18.64 12.05 17.46 13.23 16 13.23C14.54 13.23 13.36 12.05 13.36 10.59C13.36 9.14 14.54 7.96 16 7.96Z" fill="#FFFFFF"/>
+                    <path d="M16 18.77C17.46 18.77 18.64 19.95 18.64 21.41C18.64 22.86 17.46 24.05 16 24.05C14.54 24.05 13.36 22.86 13.36 21.41C13.36 19.95 14.54 18.77 16 18.77Z" fill="#FFFFFF"/>
+                  </svg>
+                  <div>
+                    <div style="font-weight: 700; font-size: 1.25rem; color: var(--fr-blue);">Parcoursup</div>
+                    <div style="font-weight: 300; font-size: 0.875rem; color: var(--fr-blue);">2.0</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <h3>Zones de protection</h3>
+          <p>Pour assurer la lisibilité du logo, un espace minimum doit être maintenu autour de celui-ci, équivalent à la hauteur du symbole Marianne.</p>
+          <div style="background: var(--fr-grey-50); padding: 2rem; border-radius: var(--radius); width: fit-content; border: 1px dashed var(--fr-grey-400);">
+            <div class="logo-container">
+              <svg class="logo-marianne" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H32V32H0V0Z" fill="#000091"/>
+                <path d="M9.73 10.86C11.19 10.86 12.37 12.05 12.37 13.5C12.37 14.96 11.19 16.14 9.73 16.14C8.27 16.14 7.09 14.96 7.09 13.5C7.09 12.05 8.27 10.86 9.73 10.86Z" fill="#FFFFFF"/>
+                <path d="M22.27 10.86C23.73 10.86 24.91 12.05 24.91 13.5C24.91 14.96 23.73 16.14 22.27 16.14C20.81 16.14 19.63 14.96 19.63 13.5C19.63 12.05 20.81 10.86 22.27 10.86Z" fill="#FFFFFF"/>
+                <path d="M16 7.96C17.46 7.96 18.64 9.14 18.64 10.59C18.64 12.05 17.46 13.23 16 13.23C14.54 13.23 13.36 12.05 13.36 10.59C13.36 9.14 14.54 7.96 16 7.96Z" fill="#FFFFFF"/>
+                <path d="M16 18.77C17.46 18.77 18.64 19.95 18.64 21.41C18.64 22.86 17.46 24.05 16 24.05C14.54 24.05 13.36 22.86 13.36 21.41C13.36 19.95 14.54 18.77 16 18.77Z" fill="#FFFFFF"/>
+              </svg>
+              <div>
+                <div style="font-weight: 700; font-size: 1.25rem; color: var(--fr-blue);">Parcoursup</div>
+                <div style="font-weight: 300; font-size: 0.875rem; color: var(--fr-blue);">2.0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section">
+          <h2>Icônes</h2>
+          <p>Les icônes utilisées dans l'interface doivent être cohérentes et suivre le style du Système de Design de l'État français.</p>
+          
+          <div class="interactive-example">
+            <h3>Taille des icônes</h3>
+            <div style="display: flex; align-items: flex-end; gap: 2rem;">
+              <div style="text-align: center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+                <div style="font-size: 0.75rem; margin-top: 0.5rem;">16px</div>
+              </div>
+              
+              <div style="text-align: center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+                <div style="font-size: 0.75rem; margin-top: 0.5rem;">24px</div>
+              </div>
+              
+              <div style="text-align: center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+                <div style="font-size: 0.75rem; margin-top: 0.5rem;">32px</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="interactive-example">
+            <h3>Exemples d'icônes</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 1rem; text-align: center;">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <div style="font-size: 0.75rem; margin-top: 0.5rem;">Accueil</div>
+              </div>
+              
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <div style="font-size: 0.75rem; margin-top: 0.5rem;">Utilisateurs</div>
+              </div>
+              
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <div style="font-size: 0.75rem; margin-top: 0.5rem;">Document</div>
+              </div>
+              
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <div style="font-size: 0.75rem; margin-top: 0.5rem;">Information</div>
+              </div>
+              
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <div style="font-size: 0.75rem; margin-top: 0.5rem;">Horloge</div>
+              </div>
+              
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <div style="font-size: 0.75rem; margin-top: 0.5rem;">Calendrier</div>
+              </div>
+              
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <div style="font-size: 0.75rem; margin-top: 0.5rem;">Validation</div>
+              </div>
+              
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+                <div style="font-size: 0.75rem; margin-top: 0.5rem;">Fermer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div>&copy; 2023 Parcoursup 2.0. Tous droits réservés.</div>
+      <div class="footer-links">
+        <a href="#">Aide</a>
+        <a href="#">Confidentialité</a>
+        <a href="#">Conditions d'utilisation</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Gestion des onglets
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const tabId = tab.getAttribute('data-tab');
+          
+          // Désactiver tous les onglets et contenus
+          document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+          document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+          
+          // Activer l'onglet et le contenu sélectionnés
+          tab.classList.add('active');
+          document.getElementById(tabId).classList.add('active');
+        });
+      });
+    });
+    
+    // Fonction pour copier les codes couleur
+    function copyToClipboard(text, element) {
+      navigator.clipboard.writeText(text).then(() => {
+        element.classList.add('visible');
+        setTimeout(() => {
+          element.classList.remove('visible');
+        }, 1500);
+      });
+    }
+  </script>
+</body>
 </html>
